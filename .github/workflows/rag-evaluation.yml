@@ -1,0 +1,15 @@
+name: RAG Evaluation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "backend/app/services/**"
+      - "evaluations/**"
+
+jobs:
+  evaluation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "TODO: Install evaluation dependencies and run Ragas on a curated dataset."

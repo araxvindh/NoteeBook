@@ -1,0 +1,11 @@
+{
+  "name": "personal-rag-e2e",
+  "private": true,
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.0.0",
+    "typescript": "^5.0.0"
+  }
+}

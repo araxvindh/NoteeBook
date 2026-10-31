@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# TODO before enabling:
+# - Configure AWS OIDC role and restrict its trust policy to this repository/branch.
+# - Add ECR build/push steps.
+# - Deploy to EC2 using AWS Systems Manager (SSM).
+# - Add post-deployment health checks and rollback handling.
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  deployment-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Deployment scaffold only. Configure AWS OIDC, ECR, SSM, and health checks."
